@@ -26,14 +26,229 @@
 </head>
 <body>
     
+  <!---------------- Header START --------------------->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo/initiative_geneve_logo.png" alt="Logo"/>
+        </a>
+      </div>
+      <!-- Navigation -->
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">Qui sommes-nous</a></li>
+          <li><a class="nav-link scrollto" href="#announcement">Activités</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portefeuille</a></li>
+
+          <li class="dropdown"><a href="#team"><span>Nos commissions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#team1">Commission 1</a></li>
+              <li><a href="#team2">Commission 2</a></li>
+              <li><a href="#team3">Commission 3</a></li>
+              <li><a href="#team4">Commission 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="join scrollto" href="#join">Rejoignez-nous</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+  <!----------------- Header END ---------------------->
 
 
+  <!------------------ Hero START --------------------->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to Medilab</h1>
+      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section>
+  <!------------------ Hero END ----------------------->
 
+  <!------------------ Main END ----------------------->
+  <main id="main">
+    
+    
+    <!--* About *-->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <!-- About Title and Intro -->
+        <header class="section-header">
+          <h3>Notre association</h3>
+          <p>
+            Initiative Genève est une association fondée en 2022 par les migrants venant récemment à Genève. Des individus qui participent au mouvement initiative Genève promeut la philanthropie pour servir l’humanité, l’éducation pour cultiver des individus vertueux et le dialogue pour une coexistence pacifique.
+          </p>
+        </header>
 
+        <!-- About -->
+        <div class="row about-cols">
 
+          <!-- Qui sommes-nous -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about/about-mission.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-globe"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Qui sommes-nous?</a></h2>
+              <p>
+                S’intégrer et contribuer à la société dont nous faisons partie est notre plus grande motivation. C’est là que les gens ont besoin de soutien. Il peut ne pas être autonome de temps en temps pour déterminer ses besoins, formuler comment les résoudre et enfin appliquer cette formule, qui consiste en des connaissances théoriques, dans la vie pratique.
+              </p>
+            </div>
+          </div>
 
+          <!-- Notre source de motivation -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Notre source de motivation!</a></h2>
+              <p>
+                S’intégrer et contribuer à la société dont nous faisons partie est notre plus grande motivation. C’est là que les gens ont besoin de soutien. Il peut ne pas être autonome de temps en temps pour déterminer ses besoins, formuler comment les résoudre et enfin appliquer cette formule, qui consiste en des connaissances théoriques, dans la vie pratique.
+              </p>
+            </div>
+          </div>
+
+          <!-- >Notre perspective -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="bi bi-eye-fill"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Notre perspective</a></h2>
+              <p>
+                S’intégrer et contribuer à la société dont nous faisons partie est notre plus grande motivation. C’est là que les gens ont besoin de soutien. Il peut ne pas être autonome de temps en temps pour déterminer ses besoins, formuler comment les résoudre et enfin appliquer cette formule, qui consiste en des connaissances théoriques, dans la vie pratique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     
+    <!--* Contact *-->
+    <section id="contact" class="contact">
+      <div class="container">
+        <!-------------- Contact Title ---------------------->
+        <div class="section-header">
+          <h3>Contact</h3>
+          <p>Nous nous tenons à votre disposition pour répondre à vos questions ou demandes.</p>
+        </div>
+        <!-------------- Contact ---------------------->
+        <div class="row">
+  
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <!-------- Info ----------->
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p><a href="https://maps.app.goo.gl/rH4ALwAXZ4fcynpy9" onclick="openMap(this)">
+                  Rue du Pré-Bouvier 8-10, 1214 Satigny</a></p>
+              </div>
+  
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p><a href="mailto:info@intiativegeneve.ch">info@initiativegeneve.ch<br></a></p>
+              </div>
+  
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p><a href="tel:0779500019">+41 77 950 00 19<br></a></p>
+              </div>
+              
+              <!------------- Google map -------------------->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44165.08429600084!2d5.9847290216796845!3d46.224025100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6302c3ec8e65%3A0x342c063d6735156d!2sInitiative%20Geneve!5e0!3m2!1sfr!2sus!4v1703028567166!5m2!1sfr!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+  
+          </div>
+  
+          <!----------- Contact Form --------------->
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Nom</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Adresse e-mail</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Objet</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Envoyer</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  </main>
+  <!------------------ Main END ----------------------->
+
+  
+  <!---------- Button Back to Top START---------------->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+  <!----------- Button Back to Top END----------------->
+
+  <!---------------- Footer START --------------------->
+  <footer id="footer">
+    <div class="container">
+      <h3>Initiative Genève</h3>
+      <p>Pour l'avenir ensemble.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/initiativegenev" target="_blank" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/initiativegeneve" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/initiativegeneve/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin" target="_blank" ></i></a>
+        <a href="#" class="youtube"><i class="bx bxl-youtube" target="_blank" ></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Initiative Genève</span></strong>. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+  <!----------------- Footer END ---------------------->
+
+
+
+
+
+  <!-- JS Files -->
+ 
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
