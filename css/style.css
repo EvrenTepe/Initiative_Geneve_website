@@ -97,13 +97,14 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 60px;
 }
 
+
 /*----------- Navigation Menu -----------*/
 /**Desktop Navigation**/
-#navbar {
+.navbar {
   padding: 0;
 }
 
-#navbar ul {
+.navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -111,18 +112,18 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#navbar li {
+.navbar li {
   position: relative;
 }
 
-#navbar>ul>li {
+.navbar>ul>li {
   position: relative;
   white-space: nowrap;
   padding: 8px 0 8px 20px;
 }
 
-#navbar a,
-#navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,22 +135,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 2px;
 }
 
-#navbar a i,
-#navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
 
-#navbar a:hover,
-#navbar .active,
-#navbar .active:focus {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
   color: var(--navigation-text-hover-color);
   border-color: var(--navigation-text-hover-color);
 }
 
-#navbar .join,
-#navbar .join:focus {
+.navbar .join,
+.navbar .join:focus {
   background: var(--main-color);
   padding: 10px 25px;
   margin-left: 10px;
@@ -158,14 +159,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#navbar .join:hover,
-#navbar .join:focus:hover {
+.navbar .join:hover,
+.navbar .join:focus:hover {
   color: #fff;
   background: var(--main-hover-color);
   border-color: var(--main-bg-color);
 }
 
-#navbar .dropdown ul {
+.navbar .dropdown ul {
   display: block;
   position: absolute;
   left: 20px;
@@ -180,11 +181,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-#navbar .dropdown ul li {
+.navbar .dropdown ul li {
   min-width: 200px;
 }
 
-#navbar .dropdown ul a {
+.navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 500;
@@ -193,29 +194,29 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-#navbar .dropdown ul a i {
+.navbar .dropdown ul a i {
   font-size: 12px;
 }
 
-#navbar .dropdown ul a:hover,
-#navbar .dropdown ul .active:hover,
-#navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
   color: var(--navigation-text-hover-color);
 }
 
-#navbar .dropdown:hover>ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
-#navbar .dropdown .dropdown ul {
+.navbar .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
 
-#navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -224,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1200px) {
   #header .logo img {
-    content: url("../img/logo/logo.png");
+    content: url("../img/logo/logo.svg");
   }
 }
 
@@ -247,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
-  #navbar ul {
+  .navbar ul {
     display: none;
   }
 
@@ -261,12 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
     max-height: 40px;
-    content: url("../img/logo/logo.png");
-  }
-
-  #header .motto img{
-    max-height: 30px;
-    content: url("../img/logo/logo.png");
+    content: url("../img/logo/initiative_geneve_logo.svg");
   }
 }
 
@@ -369,8 +365,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero/hero-bg.jpg") top center;
   background-size: cover;
+  position: relative;
 }
 
 #hero .container {
@@ -595,6 +592,144 @@ h1, h2, h3, h4, h5, h6 {
 }
 /***************************** About END ********************************/
 
+/*************************** Activities START ***************************/
+#activities .a-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#activities .a-item .a-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#activities .a-item .a-link .a-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 22, 23, 0.75);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -moz-transition: opacity ease-in-out 0.3s;
+  -ms-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
+}
+
+#activities .a-item .a-link .a-hover .ah-content {
+  font-size: 6.3rem;
+}
+
+#activities .a-item .a-link:hover .a-hover {
+  opacity: 1;
+}
+
+#activities .a-item .a-caption .ac-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#activities .a-item .a-caption .ac-subheading {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/**Activities Modals**/
+.a-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+
+
+.a-modal .modal-content h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.a-modal .modal-content .a-intro {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.a-modal .close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.a-modal .close-modal:hover {
+  opacity: 0.5;
+}
+
+@media(max-width:991.98px) {
+  header.backImage {
+      padding-top: 11rem;
+      padding-bottom: 13rem;
+  }
+
+  header.backImage .backImage-heading {
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+
+  #mainNavbar .navbar-nav .nav-item .nav-link {
+      color: #212529;
+  }
+
+  .a-modal .modal-content h2 {
+      font-size: 2rem;
+      line-height: 2rem;
+  }
+
+  .a-modal .close-modal {
+      width: 2rem;
+      height: 2rem;
+  }
+}
+
+/**************************** Activities END ****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -803,6 +938,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+}
+
+#footer img {
+  max-height: 80px;
 }
 
 #footer .social-links {
