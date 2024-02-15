@@ -1,221 +1,535 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Evren TEPE" />
-    <meta name="description" content="Association - Initiative Genève" />
-    <meta name="keyword" content="association, Genève, initiative, activité, culture, dialogue, turc, Turquie" />
-    <title>Initiative Genève</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Favicons -->
-    <link href="img/logo/favicon.png" rel="icon">
-    <link href="img/logo/apple-touch-icon.png" rel="apple-touch-icon">
+  <title>Initiative Genève</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="assets/img/logo/favicon.png" rel="icon">
+  <link href="assets/img/logo/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- CSS Files -->
-    <link href="extra/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="extra/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="extra/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Main CSS File -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/scss/style.css" rel="stylesheet">
+
 </head>
-<body>
-    
-  <!---------------- Header START --------------------->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <!-- Logo -->
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logo/initiative_geneve_logo.svg" alt="Logo"/>
-        </a>
-      </div>
 
-      <!-- Navigation -->
-      <nav id="navbar" class="navbar order-last order-lg-0">
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:info@initiativegeneve.ch">info@initiativegeneve.ch</a>
+        <i class="bi bi-phone-fill phone-icon"></i><a href="tel:+41779500019">+41 77 950 00 19</a>
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="https://twitter.com/initiativegenev" target="_blank" class="twitter"><i
+            class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/initiativegeneve" target="_blank" class="facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/initiativegeneve/" target="_blank" class="instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://youtube.com/@INITIATIVEGENEVE?si=UkzpaL2waDBTfMrZ" target="_blank" class="youtube"><i
+            class="bi bi-youtube" target="_blank"></i></a>
+      </div>
+    </div>
+  </section><!-- END Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <!-- LOGO -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo/initiative_geneve_logo.svg" alt=""
+          class="img-fluid"></a>
+
+      <!-- NAVBAR -->
+      <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
           <li><a class="nav-link scrollto" href="#about">Qui sommes-nous</a></li>
-          <li><a class="nav-link scrollto" href="#activities">Activités</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portefeuille</a></li>
-
-          <li class="dropdown"><a href="#team"><span>Nos commissions</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#team1">Commission 1</a></li>
-              <li><a href="#team2">Commission 2</a></li>
-              <li><a href="#team3">Commission 3</a></li>
-              <li><a href="#team4">Commission 4</a></li>
-            </ul>
-          </li>
+          <li><a class="nav-link scrollto " href="#activity">Activités</a></li>
+          <li><a class="nav-link scrollto" href="documents.html">Documents</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="join scrollto" href="#join">Rejoignez-nous</a></li>
+          <li><a class="getstarted scrollto" href="registration.html">Rejoignez-nous</a></li>
+          <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>-->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+      </nav><!-- .navbar -->
     </div>
-  </header>
-  <!----------------- Header END ---------------------->
+  </header><!-- End Header -->
 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-  <!------------------ Hero START --------------------->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <!--   <h1>Welcome to Medilab</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>    -->
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/hero/hero-bg-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Bienvenue à <span>Initiative Genève</span></h2>
+              <p class="animate__animated animate__fadeInUp">Des individus qui participent au mouvement initiative
+                Genève promeut la philanthropie pour servir l’humanité, l’éducation pour cultiver des individus vertueux
+                et le dialogue pour une coexistence pacifique.</p>
+              <a href="about-us.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Découvrez
+                notre association</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/hero/hero-bg-2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Inscrivez-vous à <span>Initiative Genève</span></h2>
+              <p class="animate__animated animate__fadeInUp">Nous vous invitons à vous abonner à notre association pour
+                recevoir les dernières nouvelles de nos activités.</p>
+              <a href="registration.html"
+                class="btn-get-started animate__animated animate__fadeInUp scrollto">Rejoignez-nous</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide Example
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
     </div>
-  </section>
-  <!------------------ Hero END ----------------------->
+  </section><!-- End Hero -->
 
-  <!------------------ Main END ----------------------->
   <main id="main">
-    
-    <!--* Announcements *-->
+
+    <!-- ======= Announcements Section ======= -->
     <section id="announcements" class="announcements">
-      <!-- Yapilacak olan anonslar icin bi section olusturulacak -->
-    </section>
-    
-    <!--* About *-->
+      <div class="container">
+        <!-- Announcements Title and Intro -->
+        <div class="section-title">
+          <h2>Annonces</h2>
+          <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid facilis moles....</p>-->
+        </div>
+
+        <!-- Announcements Slider -->
+        <div class="announcements-carousel swiper">
+          <div class="swiper-wrapper align-items-center">
+
+            <!-- Anonce-1 (Formation en Informatique) -->
+            <div class="swiper-slide">
+              <div class="d-flex align-items-stretch">
+                <div class="card">
+                  <div class="card-img">
+                    <a href="assets/img/announcements/formation_informatique.jpg" class="glightbox"
+                      data-gall="card-img">
+                      <img src="assets/img/announcements/formation_informatique.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Formation en informatique</h5>
+                    <p class="fst-italic text-center">Va bientôt<br>commencer</p>
+                    <!--<p class="card-text">Nous attendons votre participation aux formations de niveau base et avancé dans
+                      le domaine de l'informatique, qui dureront environ un an sous la houlette de notre association.
+                    </p>-->
+                    <a href="https://forms.gle/2dcucjqAw1dP2Ek59" target="_blank">S'inscrire</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Anonce-1 -->
+
+            <!-- Anonce-2 (Qu'est-ce que Pâques?) -->
+            <div class="swiper-slide">
+              <div class="d-flex align-items-stretch">
+                <div class="card">
+                  <div class="card-img">
+                    <a href="assets/img/announcements/paque-2024.jpeg" class="glightbox" data-gall="card-img">
+                      <img src="assets/img/announcements/paque-2024.jpeg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Qu'est-ce que Pâques?</h5>
+                    <p class="fst-italic text-center">15 Février 2024 <br>à 19h</p>
+                    <!--<p class="card-text">Qu'est-ce que Pâques? Quelle est son importance pour les chrétiens, qu'est-ce
+                      que cela signifie? Madame Véronique Egger-Sigg nous recontera tout sur Pâques et répondra à nos
+                      questions.</p>-->
+                    <a href="https://unige.zoom.us/j/65997710101?pwd=OWNDWUpDNVJIY1drNTcvWDNLUXNpdz09"
+                      target="_blank">Rejoindre</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Anonce-2 -->
+
+            <!-- Anonce-3 (Métier de conducteur) -->
+            <div class="swiper-slide">
+              <div class="d-flex align-items-stretch">
+                <div class="card">
+                  <div class="card-img">
+                    <a href="assets/img/announcements/surucu_egitimi.jpg" class="glightbox" data-gall="card-img">
+                      <img src="assets/img/announcements/surucu_egitimi.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Métier de conducteur</h5>
+                    <p class="fst-italic text-center">15 Février 2024 <br>à 19h</p>
+                    <!--<p class="card-text">Nous apprécions votre participation à notre événement de partage d’expériences
+                      où vous pourrez apprendre tout ce que vous voulez savoir sur la conduite d’autobus et de camions.
+                    </p>-->
+                    <a href="https://unige.zoom.us/j/65997710101?pwd=OWNDWUpDNVJIY1drNTcvWDNLUXNpdz09"
+                      target="_blank">Rejoindre</a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- Anonce-3 -->
+
+            <!-- Anonce-4 Example (Anonce name)
+            <div class="swiper-slide">
+              <div class="d-flex align-items-stretch">
+                <div class="card">
+                  <div class="card-img">
+                    <a href="assets/img/announcements/surucu_egitimi.jpg" class="glightbox" data-gall="card-img">
+                      <img src="assets/img/announcements/surucu_egitimi.jpg" alt="...">
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Formation en informatique</h5>
+                    <p class="fst-italic text-center">Le jeudi 15 Février 20234 à 19h</p>
+                    <p class="card-text">La réunion de présentation de notre formation en informatique, qui se compose de deux niveaux et sera organisée par notre association.</p>
+                    <a href="https://unige.zoom.us/j/65997710101?pwd=OWNDWUpDNVJIY1drNTcvWDNLUXNpdz09" target="_blank">Rejoindre</a>
+                  </div>
+                </div>
+              </div>
+            </div> End Anonce-4 -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Announcements Section -->
+
+    <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
         <!-- About Title and Intro -->
-        <header class="section-header">
-          <h3>Notre association</h3>
-          <p>
-            Initiative Genève est une association fondée en 2022 par les migrants venant récemment à Genève. Des individus qui participent au mouvement initiative Genève promeut la philanthropie pour servir l’humanité, l’éducation pour cultiver des individus vertueux et le dialogue pour une coexistence pacifique.
-          </p>
-        </header>
+        <div class="section-title">
+          <h2>Notre association</h2>
+          <p>Initiative Genève est une association fondée en 2022 par les migrants venant récemment à Genève. Des
+            individus qui participent au mouvement initiative Genève promeut la philanthropie pour servir l’humanité,
+            l’éducation pour cultiver des individus vertueux et le dialogue pour une coexistence pacifique.</p>
+        </div>
 
-        <!-- About -->
-        <div class="row about-cols">
-
+        <!-- About Content -->
+        <div class="row">
           <!-- Qui sommes-nous -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-12 col-lg-4">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/about.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-globe"></i></div>
+                <a href="about-us.html#about-us-intro">
+                  <img src="assets/img/about/about.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="bi bi-globe"></i></div>
+                </a>
               </div>
-              <h2 class="title"><a href="#">Qui sommes-nous?</a></h2>
+              <h2 class="title"><a href="about-us.html#about-us-intro">Qui sommes-nous?</a></h2>
               <p>
-                Le but d’Initiative Genève est d’assister les migrants à s’intégrer à la vie sociale à Genève. Initiative Genève s’emploie à promouvoir des projets et des initiatives d’enrichissement communautaire en servant de plate-forme centralisée de collaboration, de centre de réseautage et de centre de ressources en facilitant le partage des meilleures pratiques.
+                Le but d’Initiative Genève est d’assister les migrants à s’intégrer à la vie sociale à Genève.
+                Initiative Genève s’emploie à promouvoir des projets et des initiatives d’enrichissement communautaire
+                en servant de plate-forme centralisée de collaboration, de centre de réseautage et de centre de
+                ressources en facilitant le partage des meilleures pratiques.
               </p>
+              <div class="read-more">
+                <a href="about-us.html#about-us-intro" class="btn-inline">Lire la suite</a>
+              </div>
             </div>
           </div>
 
           <!-- Notre source de motivation -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-12 col-lg-4">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/motivation.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                <a href="about-us.html#about-us-motivation">
+                  <img src="assets/img/about/motivation.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                </a>
               </div>
-              <h2 class="title"><a href="#">Notre source de motivation!</a></h2>
+              <h2 class="title"><a href="about-us.html#about-us-motivation">Notre source de motivation!</a></h2>
               <p>
-                S’intégrer et contribuer à la société dont nous faisons partie est notre plus grande motivation. C’est là que les gens ont besoin de soutien. Il peut ne pas être autonome de temps en temps pour déterminer ses besoins, formuler comment les résoudre et enfin appliquer cette formule, qui consiste en des connaissances théoriques, dans la vie pratique.
+                S’intégrer et contribuer à la société dont nous faisons partie est notre plus grande motivation. C’est
+                là que les gens ont besoin de soutien. Il peut ne pas être autonome de temps en temps pour déterminer
+                ses besoins, formuler comment les résoudre et enfin appliquer cette formule, qui consiste en des
+                connaissances théoriques, dans la vie pratique.
               </p>
+              <div class="read-more">
+                <a href="about-us.html#about-us-motivation" class="btn-inline">Lire la suite</a>
+              </div>
             </div>
           </div>
 
           <!-- >Notre perspective -->
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-12 col-lg-4">
             <div class="about-col">
               <div class="img">
-                <img src="img/about/perspective.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="bi bi-eye-fill"></i></div>
+                <a href="about-us.html#about-us-perspective">
+                  <img src="assets/img/about/perspective.jpg" alt="" class="img-fluid">
+                  <div class="icon"><i class="bi bi-eye-fill"></i></div>
+                </a>
               </div>
-              <h2 class="title"><a href="#">Notre perspective</a></h2>
+              <h2 class="title"><a href="about-us.html#about-us-perspective">Notre perspective</a></h2>
               <p>
-                Contribuer au dialogue de la famille humaine de différentes langues, religions, races, cultures et couleurs en coopérant avec des individus et des institutions qui ne contredisent pas les valeurs exprimées dans la déclaration universelle des droits de l’homme en protégeant et valorisant le patrimoine de l’humanité et de le porter vers l’avenir.
+                Contribuer au dialogue de la famille humaine de différentes langues, religions, races, cultures et
+                couleurs en coopérant avec des individus et des institutions qui ne contredisent pas les valeurs
+                exprimées dans la déclaration universelle des droits de l’homme en protégeant et valorisant le
+                patrimoine de l’humanité et de le porter vers l’avenir.
               </p>
+              <div class="read-more">
+                <a href="about-us.html#about-us-perspective" class="btn-inline">Lire la suite</a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-    </section>
+    </section><!-- End About Us Section -->
 
-    <!--* Activities *-->
-    <section id="activities" class="activities">
+    <!-- ======= Activities Section ======= -->
+    <section id="activity" class="activity">
+      <div class="container">
+        <!-- Activities Title and Intro -->
+        <div class="section-title">
+          <h2>Activités</h2>
+          <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid facilis moles....</p>-->
+        </div>
 
-    </section>
+        <!-- See more link -->
+        <div class="see-more-link">
+          <a href="archive.html">Toutes les activités<i class="bi bi-arrow-right-short"></i></a>
+        </div>
+
+        <!-- Activities Slider -->
+        <div id="activity-carousel" class="swiper">
+          <div class="swiper-wrapper">
+
+            <!--*********************************************** La fête de Pâques *********************************************************-->
+            <div class="swiper-slide">
+              <div class="card-box card-shadow">
+                <div class="">
+                  <img src="assets/img/activities/fete_paques/001.jpg" alt="" class="img img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h2 class="title">
+                        <a href="details/details-fete-paques.html">La fête de Pâques</a>
+                      </h2>
+                    </div>
+                    <div class="card-date">
+                      <a href="details/details-fete-paques.html">18 Sep. 2024</a>
+                    </div>
+                    <div class="card-see-more">
+                      <a href="details/details-fete-paques.html" class="see-more">Voir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--************************************************ END La fête de Pâques **********************************************************-->
+
+
+            <!--*********************************************** START Le cours de turc *********************************************************-->
+            <div class="swiper-slide">
+              <div class="card-box card-shadow">
+                <div class="">
+                  <img src="assets/img/activities/cours_turc/001.jpg" alt="" class="img img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h2 class="title">
+                        <a href="details/details-cours-turc.html">Le cours de turc</a>
+                      </h2>
+                    </div>
+                    <div class="card-date">
+                      <a href="details/details-cours-turc.html">18 Sep. 2024</a>
+                    </div>
+                    <div class="card-see-more">
+                      <a href="details/details-cours-turc.html" class="see-more">Voir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--************************************************ END Le cours de turc **********************************************************-->
+
+
+            <!--*********************************************** START Le camp d'hiver *********************************************************-->
+            <div class="swiper-slide">
+              <div class="card-box card-shadow">
+                <div class="">
+                  <img src="assets/img/activities/camp_hiver/001.jpeg" alt="" class="img img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h2 class="title">
+                        <a href="details/details-camp-hiver.html">Le camp d'hiver</a>
+                      </h2>
+                    </div>
+                    <div class="card-date">
+                      <a href="details/details-camp-hiver.html">18 Sep. 2024</a>
+                    </div>
+                    <div class="card-see-more">
+                      <a href="details/details-camp-hiver.html" class="see-more">Voir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--************************************************ END Le camp d'hiver **********************************************************-->
+
+
+            <!--*********************************************** START Voyage en Italie *********************************************************-->
+            <div class="swiper-slide">
+              <div class="card-box card-shadow">
+                <div class="">
+                  <img src="assets/img/activities/italy_trip/001.jpeg" alt="" class="img img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header">
+                    <div class="card-title">
+                      <h2 class="title">
+                        <a href="details/details-voyage-italie.html">Voyage en Italie</a>
+                      </h2>
+                    </div>
+                    <div class="card-date">
+                      <a href="details/details-voyage-italie.html">18 Sep. 2024</a>
+                    </div>
+                    <div class="card-see-more">
+                      <a href="details/details-voyage-italie.html" class="see-more">Voir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--************************************************ END Voyage en Italie **********************************************************-->
 
 
 
+          </div>
+        </div>
 
+        <!-- Carousel Pagination -->
+        <div class="activity-carousel-pagination carousel-pagination"></div>
+      </div>
+    </section><!-- End Activities Section -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    <!--* Contact *-->
+    <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-        <!-------------- Contact Title ---------------------->
-        <div class="section-header">
-          <h3>Contact</h3>
+
+        <div class="section-title">
+          <h2>Contact</h2>
           <p>Nous nous tenons à votre disposition pour répondre à vos questions ou demandes.</p>
         </div>
-        <!-------------- Contact ---------------------->
+
         <div class="row">
-  
+
           <div class="col-lg-5 d-flex align-items-stretch">
-            <!-------- Info ----------->
             <div class="info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p><a href="https://maps.app.goo.gl/rH4ALwAXZ4fcynpy9" onclick="openMap(this)">
-                  Rue du Pré-Bouvier 8-10, 1214 Satigny</a></p>
+                <a href="https://maps.app.goo.gl/rH4ALwAXZ4fcynpy9" onclick="openMap(this)"><i
+                    class="bi bi-geo-alt"></i></a>
+                <h4>Adresse:</h4>
+                <p><a href="https://maps.app.goo.gl/rH4ALwAXZ4fcynpy9" onclick="openMap(this)">Rue du Pré-Bouvier 8-10,
+                    1214 Satigny</a></p>
               </div>
-  
+
               <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
+                <a href="mailto:info@intiativegeneve.ch"><i class="bi bi-envelope"></i></a>
+                <h4>E-mail:</h4>
                 <p><a href="mailto:info@intiativegeneve.ch">info@initiativegeneve.ch<br></a></p>
               </div>
-  
+
               <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
+                <a href="tel:0779500019"><i class="bi bi-phone"></i></a>
+                <h4>Téléphone:</h4>
                 <p><a href="tel:0779500019">+41 77 950 00 19<br></a></p>
               </div>
-              
-              <!------------- Google map -------------------->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44165.08429600084!2d5.9847290216796845!3d46.224025100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6302c3ec8e65%3A0x342c063d6735156d!2sInitiative%20Geneve!5e0!3m2!1sfr!2sus!4v1703028567166!5m2!1sfr!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44165.08429600084!2d5.9847290216796845!3d46.224025100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c6302c3ec8e65%3A0x342c063d6735156d!2sInitiative%20Geneve!5e0!3m2!1sfr!2sus!4v1703028567166!5m2!1sfr!2sus"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
-  
+
           </div>
-  
-          <!----------- Contact Form --------------->
+
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Nom</label>
+                  <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6 mt-3 mt-md-0">
-                  <label for="name">Adresse e-mail</label>
+                  <label for="name">Your Email</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <label for="name">Objet</label>
+                <label for="name">Subject</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group mt-3">
@@ -227,50 +541,54 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Envoyer</button></div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
+
         </div>
+
       </div>
-    </section>
+    </section><!-- End Contact Section -->
 
-  </main>
-  <!------------------ Main END ----------------------->
+  </main><!-- End #main -->
 
-  
-  <!---------- Button Back to Top START---------------->
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-  <!----------- Button Back to Top END----------------->
-
-  <!---------------- Footer START --------------------->
+  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
       <h3>Initiative Genève</h3>
-      <img src="img/logo/logo.svg" alt="logo"/>
-      <p>Pour l'avenir ensemble.</p>
+      <img src="assets/img/logo/logo.svg" alt="logo" />
+      <p>Pour l'avenir ensemble</p>
       <div class="social-links">
-        <a href="https://twitter.com/initiativegenev" target="_blank" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/initiativegeneve" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/initiativegeneve/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin" target="_blank" ></i></a>
-        <a href="#" class="youtube"><i class="bx bxl-youtube" target="_blank" ></i></a>
+        <a href="https://twitter.com/initiativegenev" target="_blank" class="twitter"><i
+            class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/initiativegeneve" target="_blank" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/initiativegeneve/" target="_blank" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://youtube.com/@INITIATIVEGENEVE?si=UkzpaL2waDBTfMrZ" target="_blank" class="youtube"><i
+            class="bx bxl-youtube" target="_blank"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Initiative Genève</span></strong>. Tous droits réservés.
       </div>
     </div>
-  </footer>
-  <!----------------- Footer END ---------------------->
+  </footer><!-- End Footer -->
 
+  <!-- ======= Back to Top ======= -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a><!-- End Back to Top -->
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-
-
-  <!-- JS Files -->
-  <!-- Main JS File -->
-  <script src="js/main.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
