@@ -295,6 +295,12 @@
 
   });
 
+  
+  /**
+   * Animation Start (AOS)
+   */
+  AOS.init();
+
 
   /**
    * Archive Filter
@@ -318,6 +324,5 @@
       imageWrapElements.forEach((item) => item.classList.add("show"));
     }
   });
-
 
 })()
