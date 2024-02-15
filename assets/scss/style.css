@@ -565,7 +565,7 @@ section .section-title p {
   border-style: solid;
 }
 .announcements .card-title {
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
   color: #24325d;
@@ -1187,7 +1187,7 @@ section .section-title p {
 #documents a {
   font-size: larger;
   color: #222222;
-  padding: 5px 30px;
+  padding: 5px 10px;
 }
 #documents a:hover {
   color: #4E7F22;
