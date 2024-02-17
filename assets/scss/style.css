@@ -727,7 +727,7 @@ section .section-title p {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.93);
   z-index: 9;
 }
 .activity .container {
