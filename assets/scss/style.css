@@ -1274,7 +1274,7 @@ section .section-title p {
 }
 .activity-details .activity-description p {
   font-style: italic;
-  text-align: center;
+  text-align: justify;
 }
 .activity-details .gallery-item {
   margin-bottom: 30px;
