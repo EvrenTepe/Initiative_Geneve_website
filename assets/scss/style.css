@@ -787,6 +787,7 @@ section .section-title p {
 .activity .card-box .card-overlay .card-header .title a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 .activity .card-box .card-overlay .card-header .title a:hover {
   color: #80cb3c;
@@ -794,6 +795,7 @@ section .section-title p {
 .activity .card-box .card-overlay .card-header .card-date a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 1rem;
 }
 .activity .card-box .card-overlay .card-header .card-date a:hover {
   color: #80cb3c;
@@ -802,7 +804,7 @@ section .section-title p {
   padding-top: 10px;
 }
 .activity .card-box .card-overlay .card-header .card-see-more .see-more {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   letter-spacing: 0.03em;
   text-decoration: none;
   padding: 3px 10px;
@@ -1266,14 +1268,13 @@ section .section-title p {
   padding: 40px 0 60px 0;
   background-color: #EFF5F5;
 }
-.activity-details .activity-description {
-  text-align: center;
-}
 .activity-details .activity-description h2 {
+  text-align: center;
   font-style: italic;
 }
 .activity-details .activity-description p {
   font-style: italic;
+  text-align: center;
 }
 .activity-details .gallery-item {
   margin-bottom: 30px;

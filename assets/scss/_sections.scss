@@ -381,6 +381,7 @@ section {
           a {
             color: #ffffff;
             text-decoration: none;
+            font-size: 1.3rem;
 
             &:hover {
               color: lighten($primary, $amount: 20);
@@ -392,6 +393,7 @@ section {
           a {
             color: #ffffff;
             text-decoration: none;
+            font-size: 1rem;
 
             &:hover {
               color: lighten($primary, $amount: 20);
@@ -402,7 +404,7 @@ section {
         .card-see-more {
           padding-top: 10px;
           .see-more {
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             letter-spacing: 0.03em;
             text-decoration: none;
             padding: 3px 10px;

@@ -6,13 +6,15 @@
   background-color: $bg-primary;
   
   .activity-description {
-    text-align: center;
+    
     h2 {
+      text-align: center;
       font-style: italic;
     }
 
     p{
       font-style: italic;
+      text-align: center;
     }
   }
 
