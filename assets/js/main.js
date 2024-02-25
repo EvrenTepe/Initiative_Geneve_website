@@ -2,6 +2,11 @@
   "use strict";
 
   /**
+   * Animation Start (AOS)
+   */
+  AOS.init();
+
+  /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
@@ -158,16 +163,8 @@
 
 
   /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-
-  /**
-   * Hero carousel indicators
-   */
+  * Hero carousel indicators
+  */
   let heroCarouselIndicators = select("#hero-carousel-indicators")
   let heroCarouselItems = select('#heroCarousel .carousel-item', true)
 
@@ -178,10 +175,10 @@
   });
 
 
-  /**
+   /**
    * Announcements Swiper
    */
-  new Swiper('.announcements-carousel', {
+   new Swiper('.announcements-carousel', {
     speed: 400,
     loop: false,
     autoplay: {
@@ -210,6 +207,43 @@
         spaceBetween: 80
       }
     }
+  });
+
+
+  /**
+  * Activity Details Isotop and Filter
+  */
+  window.addEventListener('load', () => {
+    let galelryContainer = select('.gallery-container');
+    if (galelryContainer) {
+      let galleryIsotope = new Isotope(galelryContainer, {
+        itemSelector: '.gallery-item',
+      });
+
+      let galleryFilters = select('#gallery-flters li', true);
+
+      on('click', '#gallery-flters li', function (e) {
+        e.preventDefault();
+        galleryFilters.forEach(function (el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        galleryIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+
+      }, true);
+    }
+
+  });
+
+
+  /**
+   * Initiate glightbox 
+   */
+  const glightbox = GLightbox({
+    selector: '.glightbox'
   });
 
 
@@ -265,41 +299,6 @@
       clickable: true
     }
   });
-
-
-  /**
-  * Activity Details Isotop and Filter
-  */
-  window.addEventListener('load', () => {
-    let galelryContainer = select('.gallery-container');
-    if (galelryContainer) {
-      let galleryIsotope = new Isotope(galelryContainer, {
-        itemSelector: '.gallery-item',
-      });
-
-      let galleryFilters = select('#gallery-flters li', true);
-
-      on('click', '#gallery-flters li', function (e) {
-        e.preventDefault();
-        galleryFilters.forEach(function (el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        galleryIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-
-      }, true);
-    }
-
-  });
-
-  
-  /**
-   * Animation Start (AOS)
-   */
-  AOS.init();
 
 
   /**

@@ -1109,6 +1109,9 @@ section .section-title p {
 #about-us-intro .row p {
   text-align: justify;
 }
+#about-us-intro .row img {
+  padding-top: 40px;
+}
 
 #about-us-motivation {
   padding: 30px 0 30px 0;
