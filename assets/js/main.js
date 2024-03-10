@@ -1,8 +1,6 @@
 (function () {
   "use strict";
 
-  
-
   /**
    * Easy selector helper function
    */
@@ -74,13 +72,7 @@
     })
   }
 
-
-   /**
-   * Animation Start (AOS)
-   */
-   AOS.init();
-
-
+  
   /**
    * Header fixed top on scroll
    */
@@ -287,21 +279,15 @@
 
 
   /**
-   * Activity details Swiper
+   * Animation on scroll
    */
-  new Swiper('.activity-details-slider', {
-    autoResize: true,
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
   });
 
 
