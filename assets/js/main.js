@@ -1,10 +1,7 @@
 (function () {
   "use strict";
 
-  /**
-   * Animation Start (AOS)
-   */
-  AOS.init();
+  
 
   /**
    * Easy selector helper function
@@ -76,6 +73,13 @@
       behavior: 'smooth'
     })
   }
+
+
+   /**
+   * Animation Start (AOS)
+   */
+   AOS.init();
+
 
   /**
    * Header fixed top on scroll
